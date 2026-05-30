@@ -1,3 +1,8 @@
+---
+layout: default
+title: Zuha Asim ePortfolio
+---
+
 <div style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f2faf9; margin: 0; padding: 0; min-height: 100vh; color: #2b3a42;">
 
   <!-- HEADER SECTION -->
