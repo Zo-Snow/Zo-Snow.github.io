@@ -24,7 +24,7 @@
       </p>
       
       <!-- LINK / BUTTON -->
-      <a href="PASTE_YOUR_VIDEO_LINK_HERE" target="_blank" style="display: inline-block; background-color: #1e5f74 !important; color: #ffffff !important; padding: 16px 35px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 30px; box-shadow: 0 4px 10px rgba(30, 95, 116, 0.3); transition: all 0.3s ease;">
+      <a href="https://drive.google.com/file/d/1V2MmI2jd-ljm35zyW1N5HNvVoQAxnG4l/view?usp=sharing" target="_blank" style="display: inline-block; background-color: #1e5f74 !important; color: #ffffff !important; padding: 16px 35px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 30px; box-shadow: 0 4px 10px rgba(30, 95, 116, 0.3); transition: all 0.3s ease;">
         Watch My Code Review Video
       </a>
     </section>
