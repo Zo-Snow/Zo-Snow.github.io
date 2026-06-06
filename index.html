@@ -45,6 +45,9 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px; 
     }
     section {
       background-color: #ffffff;
@@ -52,6 +55,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       border-top: 4px solid #1e5f74;
+      text-align: left;
     }
     h2 {
       color: #1e5f74;
@@ -66,6 +70,9 @@
       color: #4a5a60;
       margin-bottom: 30px;
     }
+    .btn-container {
+      text-align: center;
+    }
     .btn {
       display: inline-block;
       background-color: #1e5f74;
@@ -76,34 +83,55 @@
       text-decoration: none;
       border-radius: 30px;
       box-shadow: 0 4px 10px rgba(30, 95, 116, 0.3);
+      transition: background-color 0.2s ease;
+    }
+    .btn:hover {
+      background-color: #154555;
     }
   </style>
 </head>
 <body>
 
-  <div class="text-center">
-    <!-- HEADER SECTION -->
-    <header>
-      <h1>Zuha Asim</h1>
-      <p class="subtitle-1">Computer Science Capstone</p>
-      <p class="subtitle-2">ePortfolio</p>
-    </header>
+  <!-- HEADER SECTION -->
+  <header class="text-center">
+    <h1>Zuha Asim</h1>
+    <p class="subtitle-1">Computer Science Capstone</p>
+    <p class="subtitle-2">ePortfolio</p>
+  </header>
 
-    <!-- MAIN BODY CONTAINER -->
-    <div class="container">
-      <!-- CODE REVIEW SECTION -->
-      <section>
-        <h2>Code Review</h2>
-        <p>
-          Welcome to my capstone ePortfolio. This section features my comprehensive code review video, which acts as the starting point for my final computer science project. In this walkthrough, I evaluate the architectural design, look closely at the code of my orginial artifact that I chose to enhance, and discuss the planned enhancements for my software to ensure they align with professional industry standards and academic expectations.
-        </p>
-        <!-- LINK / BUTTON -->
+  <!-- MAIN BODY CONTAINER -->
+  <main class="container">
+    
+    <!-- CODE REVIEW SECTION -->
+    <section>
+      <h2>Code Review</h2>
+      <p>
+        Welcome to my capstone ePortfolio. This section features my comprehensive code review video, which acts as the starting point for my final computer science project. In this walkthrough, I evaluate the architectural design, look closely at the code of my original artifact that I chose to enhance, and discuss the planned enhancements for my software to ensure they align with professional industry standards and academic expectations.
+      </p>
+      <div class="btn-container">
         <a href="https://drive.google.com/file/d/1V2MmI2jd-ljm35zyW1N5HNvVoQAxnG4l/view?usp=sharing" target="_blank" class="btn">
           Watch My Code Review Video
         </a>
-      </section>
-    </div>
-  </div>
+      </div>
+    </section>
+
+    <!-- ENHANCEMENT ONE SECTION -->
+    <section>
+      <h2>Enhancement One Software Design and Engineering</h2>
+      <p>
+        For this first enhancement, I took my original C++ grocery store sales program and completely converted it into a modern full-stack web application using Node.js, JavaScript, HTML, and CSS. This allowed me to move the project from a basic text terminal into a beautiful, interactive web interface featuring a main dashboard and a real-time store simulation page.
+      </p>
+      <p>
+        To view all of my Enhancement One files including my original artifact code, the newly enhanced codebase, and my full reflection narrative Word document, just click the button below to explore the project directory.
+      </p>
+      <div class="btn-container">
+        <a href="./Enhancement-1/" target="_blank" class="btn">
+          Explore Enhancement One Files
+        </a>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
