@@ -1,0 +1,102 @@
+<!--
+ * ============================================================================
+ * Name:         Zuha Asim
+ * Date:         May 28, 2026
+ * Version:      2.0.0
+ * Intent:       Provides the semantic UI layout for the Corner Grocer web app. 
+ *               Built for Enhancement 1 to display data grids, sales charts, 
+ *               and an interactive order simulator page. It secures the front-end 
+ *               by enforcing strict text-input length limits to block bad data early.
+ * --- UPDATES FOR ENHANCEMENT 2 (Algorithms & Data Structures) --- :
+ *               Added Chart.js and a drawing canvas to replace the old C++
+ *               text-based graphs with clean, interactive visual charts.
+ * ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Grocer | Sales Management</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- This loads the Chart.js library so we can easily create real bar charts on the screen -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header Section: Centered branding -->
+    <header class="main-header">
+        <img src="./logo.png" alt="Corner Grocer Logo" class="logo-img">
+    </header>
+
+    <!-- Navigation Bar: Light green, end-to-end design -->
+    <nav class="navbar">
+        <div class="nav-btn-group">
+            <button id="nav-dashboard" class="nav-link">Main Dashboard</button>
+            <button id="nav-simulation" class="nav-link">Order Simulator</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Main Dashboard Page -->
+        <section id="dashboard-page">
+            <!-- Centered Search and Control Bar -->
+            <div class="controls-container">
+                <label for="date-filter" class="filter-label">View Date:</label>
+                <select id="date-filter" class="date-dropdown">
+                    <option value="all">All Dates</option>
+                    <option value="2026-05-15">May 15, 2026</option>
+                    <!-- More dates will be added here dynamically as we simulate more days -->
+                </select>
+                <input type="text" id="item-search" placeholder="Enter item name..." maxlength="20">
+                <button id="search-btn" class="action-btn">Display Item</button>
+                <button id="show-all-btn" class="action-btn">View All Items</button>
+                <button id="show-graph-btn" class="action-btn">View Sales Graph</button>
+            </div>
+
+            <!-- Dynamic Result Area: Table or Graph will appear here -->
+            <div id="display-area" class="display-area">
+                <div id="table-view" class="hidden">
+                    <table id="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Quantity Sold</th>
+                                <th>Date Added</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventory-body"></tbody>
+                    </table>
+                </div>
+
+                <div id="graph-view" class="hidden">
+                    <div class="chart-box">
+                        <!-- This canvas tag is the blank space where JavaScript draws our new sales bar graph -->
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulation Tool Page -->
+        <section id="simulation-page" class="hidden">
+            <h2 class="section-title">Store Simulation</h2>
+            <!-- Grid for item buttons with icons -->
+            <div id="item-grid" class="item-grid">
+                <!-- Item Buttons will be generated here -->
+            </div>
+
+            <!-- Order Card: Pops up as users select items -->
+            <div id="order-card" class="order-card hidden">
+                <h3>Current Order Summary</h3>
+                <ul id="order-items-list"></ul>
+                <p id="order-success-msg" class="hidden">✅ Order Placed!</p>
+                <button id="place-order-btn" class="order-btn">Place Order</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+/*
+ * ============================================================================
+ * Name:         Zuha Asim
+ * Date:         May 28, 2026
+ * Version:      2.0.0
+ * Intent:       Provides modern dashboard styles and layouts for the Corner Grocer 
+ *               application. Uses a responsive system, fluid hover states, and 
+ *               CSS variables for smooth, professional theme maintenance.
+ * --- UPDATES FOR ENHANCEMENT 2 (Algorithms & Data Structures) --- :
+ *               Added dedicated layout properties for the Chart.js visual graphics 
+ *               container. This controls the display window for our dynamic 
+ *               O(n) data-mapping visualization engine.
+ * ============================================================================
+ */
+
+/* Design tokens for consistent application branding */
+:root {
+    --main-green: #90ee90;
+    --dark-text: #2c3e50;
+    --white: #ffffff;
+    --border-subtle: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Header & Branding Layouts */
+.main-header {
+    padding: 20px 0;
+}
+
+.logo-img {
+    height: 250px; 
+}
+
+.logo-text {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: var(--dark-text);
+}
+
+/* Navigation System */
+.navbar {
+    background-color: var(--main-green);
+    width: 100%;
+    padding: 0; 
+    border-bottom: 2px solid #7ccd7c;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    border-left: 1px solid var(--border-subtle); 
+    padding: 20px 40px; 
+    margin: 0; 
+    font-weight: bold;
+    color: var(--dark-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; 
+}
+
+.nav-link:last-child {
+    border-right: 1px solid var(--border-subtle);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: var(--dark-text);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 4px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+/* Control & Filter Controls */
+.controls-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 30px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    margin-right: 8px;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.date-dropdown {
+    padding: 8px 12px;
+    border: 2px solid var(--main-green);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--dark-text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.date-dropdown:hover {
+    background-color: #f0fff0; 
+    border-color: #7ccd7c;
+}
+
+.date-dropdown:focus {
+    box-shadow: 0 0 0 3px rgba(144, 238, 144, 0.3);
+}
+
+input[type="text"] {
+    height: 34px;
+    padding: 0 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--main-green); 
+    box-shadow: 0 0 8px rgba(144, 238, 144, 0.3); 
+    background-color: #fff;
+}
+
+.action-btn {
+    background-color: var(--dark-text);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Inventory Dashboard Grid & Table Views */
+.display-area {
+    margin-top: 20px;
+    padding: 0 40px; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+#table-view {
+    width: 100%;
+}
+
+#inventory-table {
+    width: 100%;
+    max-width: 1300px; 
+    margin: 20px auto; 
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px; 
+    overflow: hidden;
+    table-layout: fixed; 
+}
+
+#inventory-table th {
+    background-color: var(--dark-text);
+    color: var(--white);
+    padding: 18px; 
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#inventory-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    text-align: center;
+}
+
+#inventory-table tr:nth-child(even) td {
+    background-color: #f8fcf8; 
+}
+
+#inventory-table tr:hover td {
+    background-color: #daf5da !important; 
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#inventory-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* CURRENT ADDITION FOR ENHANCEMENT 2: GRAPH VISUALIZATION CONTAINER
+  This styles the drawing window for the Chart.js canvas framework.
+  By limiting the max-width and centering it with auto-margins, we make sure
+  the real-time bar graph scales cleanly across all desktop resolutions 
+  without dropping application display speeds.
+*/
+.chart-box {
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Interactive Simulator Layouts */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.item-btn {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.item-btn:hover {
+    border-color: var(--main-green);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-btn:active {
+    transform: scale(0.95);
+}
+
+.item-btn span {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Order Placement UI Component */
+.order-card {
+    background: #fff;
+    border-top: 5px solid var(--main-green);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 -5px 25px rgba(0,0,0,0.1);
+}
+
+.order-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Global Functional Utility Styles */
+.hidden { 
+    display: none; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
