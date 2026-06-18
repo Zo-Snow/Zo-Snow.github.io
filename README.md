@@ -11,14 +11,16 @@ The core artifact chosen for this transformation is a **Daily Sales Analysis Pro
 This master repository is organized into three distinct enhancement directories:
 
 * **`./Enhancement-1` (Software Design & Engineering):** Ported the original C++ console script into a JavaScript full-stack web application using Node.js, Express, HTML, and CSS. Features a multi-page business dashboard and store simulation layout.
+  
 * **`./Enhancement-2` (Data Structures & Algorithms):** Replaced inefficient $O(n \times m)$ loop structures and $O(n)$ linear searches with optimized $O(n)$ data-mapping and true $O(1)$ constant-time key-value dictionary lookups. Integrates browser-side Chart.js rendering.
+  
 * **`./Enhancement-3` (Databases & Security):** Transitioned from flat text files to a persistent cloud database system using MongoDB Atlas and Mongoose. Implemented multi-layered defensive security structures, strict user input validation, and server-side request throttling to ensure maximum data integrity.
 
 ---
 
-## 🛠️ How to Run the Enhancements Locally
+## How to Run the Enhancements Locally
 
-Because the backend servers rely on **Node.js**, the heavy dependency folders have been omitted from GitHub to keep the code clean. Follow these simple steps to run the projects on your machine:
+Follow these simple steps to run any of the full-stack web enhancements (`Enhancement-1`, `Enhancement-2`, or `Enhancement-3`) on your local machine:
 
 ### Prerequisites
 Make sure you have downloaded and installed [Node.js](https://nodejs.org/) on your computer.
