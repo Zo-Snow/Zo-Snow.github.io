@@ -46,17 +46,21 @@ Make sure you have downloaded and installed [Node.js](https://nodejs.org/) on yo
 
 ## What Else is Included?
 
-1. Inside each individual enhancement directory, you will find:
+### 1. Inside each individual enhancement directory, you will find:
 
 * **Original-Code vs Enhanced-Code:** Separate folders allowing you to compare the original C++ implementation side-by-side with the new full-stack files.
 
 * **Full Written Narratives:** Complete document narratives outlining the exact design choices, optimization metrics, and how specific Course Outcomes were met.
 
-2. **Code review video:** The code review was my first big chance to show that I can communicate technical ideas to other people. The review shows my ability to clearly explain how my program works and how it can be improved by walking through the original C++ application to point out areas for improvement in structure, efficiency, and usability. 
+### 2. **Code review video:** 
+
+The code review was my first big chance to show that I can communicate technical ideas to other people. The review shows my ability to clearly explain how my program works and how it can be improved by walking through the original C++ application to point out areas for improvement in structure, efficiency, and usability. 
 
 [Click here to view video](https://drive.google.com/file/d/1V2MmI2jd-ljm35zyW1N5HNvVoQAxnG4l/view?usp=sharing)
 
-3. **Professional Self-Assessment:** This document serves as my formal professional self-assessment for the CS 499 Computer Science Capstone. It outlines my academic journey, highlights my core strengths across software engineering, databases, and algorithmic optimization, and reflects on my preparation to enter the professional field as a computer science educator.
+### 3. **Professional Self-Assessment:**
+
+This document serves as my formal professional self-assessment for the CS 499 Computer Science Capstone. It outlines my academic journey, highlights my core strengths across software engineering, databases, and algorithmic optimization, and reflects on my preparation to enter the professional field as a computer science educator.
 
 ## About the Author
 
