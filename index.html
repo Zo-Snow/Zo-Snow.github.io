@@ -21,6 +21,11 @@
       padding: 50px 20px;
       border-bottom: 5px solid #13decc;
     }
+    footer {
+      background-color: #1e5f74;
+      padding: 20px 20px;
+      border-top: 5px solid #13decc;
+    }
     h1 {
       color: #ffffff;
       margin: 0;
@@ -41,33 +46,44 @@
       font-size: 1.1rem;
       font-style: italic;
     }
+    .subtitle-1, .subtitle-2, .intro, .global-repo p {
+      text-align: center;
+    }
     .container {
-      max-width: 800px;
+      max-width: 80%;
       margin: 0 auto;
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
       gap: 40px; 
     }
+    .intro {
+      background-color: #e6f0f3;
+      padding: 0px;
+      border-radius: 0px;
+      border-top: 0px;
+      box-shadow: none;
+    }
     section {
+      text-align: left;
       background-color: #ffffff;
       padding: 40px 30px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       border-top: 4px solid #1e5f74;
-      text-align: left;
     }
     h2 {
       color: #1e5f74;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-top: 0;
       margin-bottom: 20px;
       font-weight: 600;
     }
     p {
-      font-size: 1.1rem;
+      text-align: left;
+      font-size: 1.0rem;
       line-height: 1.7;
-      color: #4a5a60;
+      color: #262e32;
       margin-bottom: 30px;
     }
     .btn-container {
@@ -78,7 +94,7 @@
       background-color: #1e5f74;
       color: #ffffff;
       padding: 16px 35px;
-      font-size: 1.1rem;
+      font-size: 1.0rem;
       font-weight: bold;
       text-decoration: none;
       border-radius: 30px;
@@ -87,6 +103,24 @@
     }
     .btn:hover {
       background-color: #154555;
+    }
+    .global-repo {
+      text-align: center;
+      padding: 0 0 30px 0;
+    }
+    .global-repo p {
+      font-size: 1.1rem;
+      color: #2b3a42;
+      font-weight: 500;
+    }
+    .btn-alt {
+      background-color: #13decc;
+      color: #1e5f74;
+      box-shadow: 0 4px 10px rgba(19, 222, 204, 0.2);
+    }
+    .btn-alt:hover {
+      background-color: #10bfae;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -101,12 +135,26 @@
 
   <!-- MAIN BODY CONTAINER -->
   <main class="container">
-    
+
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>Welcome to my professional computer science capstone ePortfolio. My name is Zuha Asim, and this platform serves as a comprehensive showcase of my technical growth, academic achievements, and engineering capabilities developed throughout my time in the computer science program. This ePortfolio has been carefully constructed to display how a single, foundational programming assignment can be systematically refactored, optimized, and secured to meet modern, industry-standard production requirements. By presenting the progression of this application, I aim to demonstrate not only my full-stack development capabilities but also my dedication to technical excellence, clear communication, and the educational principles of computer science.</p>
+      
+      <h2>Professional Self-Assessment</h2>
+      <p>Reflecting on my overall growth throughout the computer science program allows me to appreciate the vast variety of technical and analytical skills I have acquired. I took an accelerated approach to my education by completing many foundational requirements within a year before transferring to complete my remaining core courses over an intensive ten-month period. During this degree, I have learned a wide range of coding languages including C++, JavaScript, HTML, CSS, Java, and Python. Beyond writing code, I developed strong mathematical skills, learned the core principles of cybersecurity and internet security, mastered software testing and assurance methodologies, and gained expertise in computer graphics and data visualization. My key strengths include the ability to build consistent full-stack applications from scratch, solve complex architectural problems, and apply clean, modular coding habits that follow professional industry best practices.</p>
+      <p>In my very first assignment, I planned a clear roadmap for how this portfolio would illustrate my skills, and I am proud to show that every goal has been met. I aimed to prove my growth by evaluating my own work honestly, identifying my core strengths in full-stack development, and highlighting my ability to communicate highly technical ideas to others. This entire portfolio is designed to connect directly with my primary career goal of becoming a computer science educator. By taking the time to thoroughly explain the underlying technical components across these files, I am proving that I do not just know how to write code, but I also possess the clear explanatory skills needed to teach these complex concepts to future students with confidence.</p>
+      <p>Completing my extensive coursework throughout the program has heavily shaped my abilities in collaborating in a team environment and communicating effectively with diverse stakeholders. In my dedicated software engineering and project management courses, I used industry standard version control pipelines. I learned that team productivity relies on providing transparent, professional oral and written updates so that project managers, clients, and technical peers can easily track development velocity. Learning to explain complex backend programming structures to non technical stakeholders taught me how to adapt my communication style to fit specific business contexts, ensuring that technical choices always support high level organizational decision making.</p>
+      <p>My academic journey also provided deep exposure to data structures, algorithms, and advanced software engineering principles outside of basic application scripting. In my advanced computing coursework, such as configuring exploration hyperparameters, exploration factors, epsilon values, and training methods for reinforcement learning models in automated python physics environments, I learned that algorithmic efficiency is crucial. I developed a strong capability to evaluate computing solutions by analyzing their time complexity, optimizing data collection loops, and managing the precise design trade offs between frontend processing speeds and backend system resource constraints. This deep algorithmic foundation ensures I can design high performance computer solutions that eliminate data processing bottlenecks and deliver genuine corporate value.</p>
+      <p>Furthermore, my program training has given me a comprehensive command over modern database management and sophisticated software security. Through specialized database development and software assurance courses, I moved past local file systems to build secure multi tier web architectures backed by enterprise data storage networks. I learned to approach software design with a strict security mindset that actively anticipates adversarial exploits, exposes potential system vulnerabilities, and mitigates design flaws before code is ever deployed. By building multiple layers of defense into my software solutions, utilizing hidden environment variables, enforcing server side validation rules, and conducting thorough input filtering, I can confidently ensure absolute data privacy and maintain data integrity across the entire application ecosystem.</p>
+      <p>The technical artifacts featured within this portfolio work together beautifully to introduce the full range of my computer science talents and show how my skills fit together as a whole. The project begins with a simple console-based script and systematically evolves through three major enhancement milestones into a secure, high-performance, cloud web application. The artifact that I selected for all three of my enhancements is a daily sales analysis program that I originally built about a year ago during my CS-210 Programming Languages course. In its original form, it is a basic console-based application written in C++ that reads a plain text file containing a list of items bought at a grocery store throughout the day, counts how many times each item appears, and gives the user a text-based menu to search for an item frequency, view a list of all items, or print a text histogram using lines of asterisks. Right now, it has been completely updated to demonstrate my versatile capabilities across software engineering, optimization, and cloud data architecture.</p>      
+      <h2>Artifacts</h2>
+    </section>
+      
     <!-- CODE REVIEW SECTION -->
     <section>
       <h2>Code Review</h2>
       <p>
-        Welcome to my capstone ePortfolio. This section features my comprehensive code review video, which acts as the starting point for my final computer science project. In this walkthrough, I evaluate the architectural design, look closely at the code of my original artifact that I chose to enhance, and discuss the planned enhancements for my software to ensure they align with professional industry standards and academic expectations.
+        The code review was my first big chance to show that I can communicate technical ideas to other people, which hits <b>Course Outcome 2</b> by delivering professional-quality oral and visual communications. The review shows my ability to clearly explain how my program works and how it can be improved by walking through the original C++ application to point out areas for improvement in structure, efficiency, and usability. I also used this review to hit <b>Course Outcome 1</b> for building collaborative environments by demonstrating how clean comments and organized file structures allow a whole team to understand my logic immediately. By walking through my plan to move from a local script to a full-stack web app, I showed how I can support organizational decision-making by making data more accessible and easier for a whole team to use.
       </p>
       <div class="btn-container">
         <a href="https://drive.google.com/file/d/1V2MmI2jd-ljm35zyW1N5HNvVoQAxnG4l/view?usp=sharing" target="_blank" class="btn">
@@ -119,10 +167,10 @@
     <section>
       <h2>Enhancement One: Software Design and Engineering</h2>
       <p>
-        For this first enhancement, I took my original C++ grocery store sales program and completely converted it into a modern full-stack web application using Node.js, JavaScript, HTML, and CSS. This allowed me to move the project from a basic text terminal into a beautiful, interactive web interface featuring a main dashboard and a real-time store simulation page.
+        Moving into my first enhancement for software engineering and design, my goal was to transform the original C++ console script into a professional full-stack web application because analyzing daily sales data is much more efficient with a graphical interface. To do this, I ported the logic into a JavaScript-based environment using Node.js for the backend and HTML and CSS for the frontend, featuring a clear navigation bar leading to a main dashboard and a dedicated store simulation tool page. By completing this enhancement, I demonstrated professional visual communication skills by designing a coherent two-page web interface specifically adapted for business users like managers and inventory staff to easily digest technical sales data. I also showed skills in innovative technical application by transitioning to a modern Node.js stack to move beyond local file processing into a collaborative web architecture where multiple team members can access data simultaneously. This enhancement directly supports <b>Course Outcome 2</b> by delivering professional-quality visual communications that are coherent, technically sound, and adapted to specific contexts. It also aligns with <b>Course Outcome 4</b> by demonstrating an ability to use well-founded and innovative techniques and tools in computing practices to deliver value and accomplish industry-specific goals, alongside <b>Course Outcome 1</b> by employing strategies for building collaborative environments that enable diverse audiences to support organizational decision-making.
       </p>
       <p>
-        To view all of my Enhancement One files including my original artifact code, the newly enhanced codebase, and my full reflection narrative Word document, just click the button below to explore the project directory.
+        To view all my code files for this enhancement on a GitHub repository, both enhanced and original, including my full written narrative as a document file, click the button below.
       </p>
       <div class="btn-container">
         <a href="https://github.com/Zo-Snow/Zo-Snow.github.io/tree/main/Enhancement-1" target="_blank" class="btn">
@@ -135,10 +183,10 @@
     <section>
       <h2>Enhancement Two: Data Structures and Algorithms</h2>
       <p>
-        For this enhancement, I optimized the application's performance by upgrading its legacy logic into efficient algorithms and data structures. I replaced an inefficient nested-loop terminal histogram with a single-pass frontend data-mapping algorithm that feeds directly into Chart.js to render a dynamic, interactive bar graph.
+        For my second enhancement, I focused entirely on data structures and algorithms to significantly improve the internal efficiency and optimization of the application. In the original C++ version, the program used a nested loop structure to print out lines of asterisks for the histogram, which created an inefficient time complexity of O(n * m) because the system had to manually loop through every single item frequency count to output characters. My enhancement optimized this by implementing a dynamic data-mapping algorithm that processes data in a single pass, dropping the time complexity down to a clean O(n) for data preparation and offloading the heavy visual rendering workload directly to Chart.js and the browser graphics engine. Furthermore, I displayed search efficiency skills by replacing the original slow linear search that ran at O(n) complexity with an optimized backend module that builds an in-memory key-value dictionary lookup map to achieve a true O(1) constant-time retrieval speed. This change demonstrates my ability to design and evaluate computing solutions through the lens of optimization and time complexity while managing the design trade-offs between backend processing power and frontend display speed to ensure the application remains responsive as the dataset grows. This enhancement aligns directly with <b>Course Outcome 3</b> by designing and evaluating computing solutions that solve a given problem using algorithmic principles and computer science practices while managing trade-offs, and it supports <b>Course Outcome 4</b> by demonstrating an ability to use well-founded and innovative techniques and tools to deliver real-world value.
       </p>
       <p>
-        Additionally, I migrated the backend from a basic sequential item list into a dedicated key-value dictionary module. This upgraded the original slow linear search into a constant-time lookup, laying a scalable architectural foundation for disk-based database indexing.
+        To view all my code files for this enhancement on a GitHub repository, both enhanced and original, including my full written narrative as a document file, click the button below.
       </p>
       <div class="btn-container">
         <a href="https://github.com/Zo-Snow/Zo-Snow.github.io/tree/main/Enhancement-2" target="_blank" class="btn">
@@ -147,7 +195,37 @@
       </div>
     </section>
 
+         <!-- ENHANCEMENT THREE SECTION -->
+    <section>
+      <h2>Enhancement Three: Databases</h2>
+      <p>
+        For my final enhancement, I moved away from simple text files where items were repeated and disorganized to implement a professional database system. I implemented a structured database using MongoDB Atlas and the Mongoose framework that stores data with specific fields for the item name, the quantity, and a timestamp so the main dashboard can pull sales data dynamically via a date-filtering dropdown menu. This enhancement is where I truly demonstrate a security mindset and mitigate design flaws by implementing multiple layers of defense split evenly between the UI and the backend database. By replacing free-text inputs on the simulation page with controlled button clicks, I effectively eliminated the risk of bad data or injection attacks, while enforcing strict validation in the search bar and a server constraint that restricts users from purchasing more than ten of a single item per order to ensure data integrity and database stability. This shift proves I can use innovative tools to provide real organizational value while keeping data management and privacy at the forefront. This final enhancement aligns with <b>Course Outcome 5</b> by developing a security mindset that anticipates adversarial exploits in software architecture to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of resources, and it shows my ability to use well-founded and innovative techniques and tools in computing practices to deliver a solution that accomplishes industry-specific goals matching <b>Course Outcome 4</b>.
+      </p>
+      <p>
+        To view all my code files for this enhancement on a GitHub repository, both enhanced and original, including my full written narrative as a document file, click the button below.
+      </p>
+      <div class="btn-container">
+        <a href="https://github.com/Zo-Snow/Zo-Snow.github.io/tree/main/Enhancement-3" target="_blank" class="btn">
+          Explore Enhancement Three Files
+        </a>
+      </div>
+    </section>
+    
+    <div class="global-repo">
+      <p>To view the main capstone repository containing all three enhancements and project materials, click the button below.</p>
+      <div class="btn-container">
+        <a href="https://github.com/Zo-Snow/Zo-Snow.github.io" target="_blank" class="btn btn-alt">
+          Visit Main GitHub Portfolio Repository
+        </a>
+      </div>
+    </div>
+
   </main>
+  <footer>
+    <p style="color: #9dced1; margin: 0; font-size: 0.9rem; text-align: center;">
+      © 2026 Zuha Asim | Computer Science Capstone ePortfolio
+    </p>
+  </footer>
 
 </body>
 </html>
