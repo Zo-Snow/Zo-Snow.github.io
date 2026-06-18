@@ -1,4 +1,4 @@
-# Zuha Asim - Computer Science Capstone ePortfolio
+# Zuha Asim - Computer Science Capstone
 
 Welcome to my computer science capstone repository. This repository showcases the systematic evolution of a foundational programming project into a secure, high-performance, cloud web application. 
 
